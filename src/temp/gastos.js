@@ -6,7 +6,7 @@ const listarGastos = (id) => {
         return msg('O id deve ser informado corretamente')
     }
 
-    if (!Number.isInteger(id)){
+    if (!Number.isInteger(Number(id))){
         return msg('O id deve ser um número')
 
     }
